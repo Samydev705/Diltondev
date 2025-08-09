@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiltonDev - Développeur Web Professionnel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation principale -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h2>DILTON DEV</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#accueil" class="nav-link">Accueil</a></li>
+          <li><a href="#about" class="nav-link">À Propos</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#tarifs" class="nav-link">Mes tarifs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Menu burger pour mobile -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Accueil/Hero -->
+    <section id="accueil" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Je suis <span class="highlight">DILTON DEV</span>
+            </h1>
+            <h2 class="hero-subtitle">Votre entreprise, je la numérise</h2>
+            <p class="hero-description">
+              Contactez-moi dès maintenant afin de vous offrir une présence en
+              ligne dans le monde du web
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn-primary">Me Contacter</a>
+              <a href="#services" class="btn-secondary">Mes Services</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-placeholder">
+              <!-- Placeholder pour l'image de profil -->
+              <div class="profile-img">
+                <img src="images/diltondev profile photo.jpg" alt="profile"
+                height: auto; width: 250px; class="profil-pic" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Animation de particules en arrière-plan -->
+      <div class="particles-container" id="particles"></div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">À Propos de Moi</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Passionné par le développement web</h3>
+            <p>
+              Passionné d’informatique depuis mon plus jeune âge et aujourd’hui
+              spécialisé en Web design, je mets mon expertise et ma créativité
+              au service de vos projets pour relever tous vos défis.
+            </p>
+            <p>
+              Votre site web est bien plus qu’une simple présence en ligne :
+              c’est la vitrine de votre entreprise. Il reflète votre image, met
+              en valeur vos produits et services, et transmet vos valeurs à vos
+              clients. Conçu stratégiquement, il devient un puissant outil de
+              communication et de développement, vous offrant de multiples
+              opportunités pour vous démarquer et renforcer votre position sur
+              le marché.
+            </p>
+
+            <div class="promises">
+              <h4>Mes deux promesses sont :</h4>
+              <div class="promise-item">
+                <div class="promise-icon">🎨</div>
+                <div class="promise-text">
+                  <strong>Design Professionnel</strong>
+                  <p>
+                    Afin de capturer toute l'attention de vos visiteurs en un
+                    seul regard, la conception d'un design professionnel est
+                    cruciale pour un site web.
+                  </p>
+                </div>
+              </div>
+              <div class="promise-item">
+                <div class="promise-icon">💼</div>
+                <div class="promise-text">
+                  <strong>Solutions Personnalisées</strong>
+                  <p>
+                    Au-delà de fournir un design professionnel, je conçois des
+                    sites web qui concordent avec le domaine et le thème de
+                    votre marque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Mes Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Développement Web</h3>
+            <p>
+              Création de sites web modernes et responsives adaptés à tous les
+              appareils
+            </p>
+            <ul class="service-features">
+              <li>Sites vitrine</li>
+              <li>E-commerce</li>
+              <li>Applications web</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Applications</h3>
+            <p>
+              Développement d'applications sur mesure pour vos besoins
+              spécifiques
+            </p>
+            <ul class="service-features">
+              <li>Applications mobiles</li>
+              <li>Applications desktop</li>
+              <li>Solutions personnalisées</li>
+            </ul>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Support & Maintenance</h3>
+            <p>
+              Accompagnement continu pour garantir le bon fonctionnement de
+              votre site
+            </p>
+            <ul class="service-features">
+              <li>Maintenance préventive</li>
+              <li>Mises à jour</li>
+              <li>Support technique</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION : Mes tarifs -->
+    <section id="tarifs">
+      <h2>Mes tarifs</h2>
+
+      <!-- Bouton pour basculer entre Statique / Dynamique -->
+      <div class="tarif-toggle">
+        <button id="btn-statique">Sites web</button>
+        <button id="btn-dynamique">Applications mobiles</button>
+      </div>
+
+      <!-- Partie : Sites web (exemple initial) -->
+      <div id="tarif-statique" class="tarif-content">
+        <div class="offre">
+          <h3>Site vitrine - 1 page</h3>
+          <p>
+            Un site clair et élégant, idéal pour présenter vos services ou votre
+            activité sur une seule page professionnelle.
+          </p>
+          <p><strong>Tarif :</strong> 100 $</p>
+        </div>
+        <div class="offre">
+          <h3>Site vitrine - 3 pages</h3>
+          <p>
+            Une présence en ligne plus complète avec trois pages distinctes,
+            pour détailler vos services, votre équipe et vos coordonnées.
+          </p>
+          <p><strong>Tarif :</strong> 500 $</p>
+        </div>
+      </div>
+
+      <!-- Partie : Applications mobiles -->
+      <div id="tarif-dynamique" class="tarif-content" style="display: none">
+        <div class="offre">
+          <h3>Offre Basique</h3>
+          <p><strong>Prix :</strong> 300 $ – 600 $ (paiement unique)</p>
+          <ul>
+            <li>Application mobile simple (3 à 5 pages)</li>
+            <li>Design personnalisé</li>
+            <li>Présentation entreprise / produits</li>
+            <li>Bouton contact / WhatsApp / appel</li>
+            <li>Version Android (Google Play)</li>
+            <li>Formation rapide à l’utilisation</li>
+          </ul>
+          <p>
+            <em>Idéal pour : petites entreprises, restaurants, artisans</em>
+          </p>
+        </div>
+
+        <div class="offre">
+          <h3>Offre Pro</h3>
+          <p><strong>Prix :</strong> 800 $ – 1 500 $ (paiement unique)</p>
+          <ul>
+            <li>Toutes les fonctionnalités de l’offre Basique</li>
+            <li>Comptes utilisateurs</li>
+            <li>Base de données (Firebase)</li>
+            <li>Notifications push</li>
+            <li>Galerie produits / services</li>
+            <li>Réservations en ligne</li>
+            <li>Publication Android + iOS</li>
+          </ul>
+          <p>
+            <em>Idéal pour : boutiques, hôtels, salles de sport, services</em>
+          </p>
+        </div>
+
+        <div class="offre">
+          <h3>Offre Premium</h3>
+          <p><strong>Prix :</strong> 1 500 $ – 3 000 $+ (paiement unique)</p>
+          <ul>
+            <li>Toutes les fonctionnalités de l’offre Pro</li>
+            <li>Paiement en ligne (Mobile Money / Carte bancaire)</li>
+            <li>QR codes / Billetterie</li>
+            <li>Tableau de bord admin</li>
+            <li>Intégrations API (ERP, CRM, etc.)</li>
+            <li>Version web (PWA) incluse</li>
+            <li>Maintenance gratuite 3 mois</li>
+          </ul>
+          <p>
+            <em
+              >Idéal pour : e-commerce, billetterie, plateformes, grandes
+              entreprises</em
+            >
+          </p>
+        </div>
+
+        <div class="offre">
+          <h3>Option Abonnement Maintenance</h3>
+          <p><strong>Prix :</strong> 100 $ - 150 $ / mois</p>
+          <p>
+            Mises à jour, correction de bugs, nouvelles fonctionnalités
+            mineures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Engagement -->
+    <section class="commitment">
+      <div class="container">
+        <div class="commitment-content">
+          <h2>Mon Engagement</h2>
+          <p class="commitment-text">
+            Que ce soit avant, pendant et même après la conception de votre
+            site, je garde un contact permanent avec mes clients afin de veiller
+            au bon fonctionnement du site et à ses futures modifications ou
+            mises à jour.
+          </p>
+          <div class="commitment-features">
+            <div class="feature">
+              <span class="feature-icon">📞</span>
+              <span>Contact permanent</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🔧</span>
+              <span>Support continu</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🚀</span>
+              <span>Mises à jour régulières</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contactez-Moi</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Prêt à numériser votre entreprise ?</h3>
+            <p>
+              N'hésitez pas à me contacter pour discuter de votre projet. Je
+              serai ravi de vous accompagner dans votre transformation digitale.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <span class="contact-icon">📧</span>
+                <span>
+                  <a href="mailto:Diltondev@gmail.com">Diltondev@gmail.com</a>
+                </span>
+              </div>
+              <div class="contact-method">
+                <span class="contact-icon">📱</span>
+                <span><a href="tel:+243897710701">+243 897 710 701</a></span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet *</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer le Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>DILTON DEV</h3>
+            <p>Votre partenaire pour la transformation digitale</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li>Développement Web</li>
+              <li>Web Design</li>
+              <li>Applications</li>
+              <li>Maintenance</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>
+              <a href="mailto:Diltondev@gmail.com">Diltondev@gmail.com</a>
+            </p>
+            <p>
+              <a href="tel:+243897710701">+243 897 710 701</a>
+            </p>
+            <div class="social-links">
+              <a
+                href="https://wa.me/243897710701"
+                target="_blank"
+                title="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://instagram.com/diltondev"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 DiltonDev. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="script.js"></script>
+  </body>
+</html>
