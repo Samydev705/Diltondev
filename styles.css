@@ -127,7 +127,6 @@ body {
   list-style: none;
   gap: var(--spacing-lg);
   color: #001877;
-  
 }
 
 .nav-link {
@@ -729,6 +728,17 @@ body {
   font-weight: 500;
 }
 
+.contact-method a {
+  color: #ffffff; /* White links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+  color: #d4a373; /* Elegant light brown on hover */
+  text-decoration: underline;
+}
+
 .contact-icon {
   font-size: 1.25rem;
 }
@@ -865,7 +875,6 @@ body {
     margin-top: var(--spacing-md);
   }
 }
-
 
 /* =======================
    ANIMATIONS

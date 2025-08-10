@@ -90,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
       tarifStatique.style.display = "block";
       tarifDynamique.style.display = "none";
 
-      // Mise à jour des styles des boutons
       btnStatique.classList.add("active");
       btnDynamique.classList.remove("active");
     });
@@ -99,13 +98,14 @@ document.addEventListener("DOMContentLoaded", function () {
       tarifStatique.style.display = "none";
       tarifDynamique.style.display = "block";
 
-      // Mise à jour des styles des boutons
       btnDynamique.classList.add("active");
       btnStatique.classList.remove("active");
     });
 
-    // Initialiser le premier bouton comme actif
-    btnStatique.classList.add("active");
+    // Initialiser le bouton "Apps mobiles" comme actif par défaut
+    btnDynamique.classList.add("active");
+    tarifStatique.style.display = "none";
+    tarifDynamique.style.display = "block";
   }
 
   /* =======================
